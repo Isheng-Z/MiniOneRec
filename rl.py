@@ -89,7 +89,7 @@ def train(
     train_datasets.append(train_data1)
     train_data2 = RLTitle2SidDataset(item_file=item_meta_path, index_file=sid_index_path, category=category_dict[category], sample=sample)
     train_datasets.append(train_data2)
-    train_data3 = RLSeqTitle2SidDataset(train_file, category=category_dict[category], sample=10000)
+    train_data3 = RLSeqTitle2SidDataset(train_file, category=category_dict[category], sample=1000)
     train_datasets.append(train_data3)
     # train_data4 = RLSid2TitleDataset(item_file=item_meta_path, index_file=sid_index_path, category=category_dict[category], sample=sample)
     # train_datasets.append(train_data4)

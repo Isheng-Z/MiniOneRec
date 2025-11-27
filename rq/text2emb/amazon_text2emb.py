@@ -69,7 +69,7 @@ def generate_item_embedding(args, item_text_list, tokenizer, model, accelerator,
         print(f"Start generating embeddings with {num_processes} processes...")
 
     local_results = []
-    batch_size = 1024 
+    batch_size = 16
     
     pbar = tqdm(total=len(local_texts), desc=f"Proc {process_index}", disable=not accelerator.is_local_main_process)
 

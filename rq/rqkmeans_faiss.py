@@ -251,7 +251,7 @@ def main():
     if args.data_path is not None:
         data_path = args.data_path
     else:
-        data_path = f"../data/Amazon/index/{args.dataset}.emb-qwen-td.npy"
+        data_path = f"./data/Amazon/index/{args.dataset}.emb-qwen-td.npy"
 
     out_dir = os.path.join(args.output_root, args.dataset)
     os.makedirs(out_dir, exist_ok=True)
