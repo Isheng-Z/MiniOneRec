@@ -9,9 +9,9 @@ from collections import defaultdict
 
 # ================= 配置区域 =================
 LIGHTGCN_DIM = 64  # 协同向量维度
-EPOCHS = 20  # 训练轮数
+EPOCHS = 100 # 训练轮数
 BATCH_SIZE = 2048
-LR = 0.001
+LR = 0.0001
 TOP_K = [10, 20]  # 评估指标 K 值
 
 

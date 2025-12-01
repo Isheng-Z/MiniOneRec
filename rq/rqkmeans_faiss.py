@@ -245,7 +245,7 @@ def main():
     parser.add_argument("--iters", type=int, default=30,
                         help="Sinkhorn iterations")
     parser.add_argument("--batch_size", type=int, default=8192)
-    parser.add_argument("--output_root", default="../data")
+    parser.add_argument("--output_root", default="./data")
     args = parser.parse_args()
 
     if args.data_path is not None:
